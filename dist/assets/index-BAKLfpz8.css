@@ -1,0 +1,1 @@
+@keyframes marquee{0%{transform:translate(0)}to{transform:translate(-50%)}}.animate-marquee-hover{display:inline-block;position:relative}.animate-marquee-hover:hover{animation:marquee 2.67s linear infinite}.animate-marquee-hover:after{content:attr(data-text);position:absolute;left:100%;padding-left:2rem;opacity:0}.animate-marquee-hover:hover:after{opacity:1}

@@ -1,10 +1,34 @@
-﻿node_modules/
+﻿# Node.js (開発時のみ使用、本番では不要)
+node_modules/
+package-lock.json
+
+# Python (仮想環境は各自で作成)
 .venv/
-dist/
-build/
 __pycache__/
 *.pyc
 *.pyo
-*.db
+*.pyd
+*.so
+*.egg-info/
+
+# Build artifacts (PyInstallerの中間ファイルのみ除外)
+build/
+
+# Logs
 *.log
+
+# OS
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ビルド済みフロントエンド (Node.js不要な環境のため含める)
+# dist/ フォルダは全てGitに含める
+
+# データベース (サンプルデータ付きで配布)
+# data.db は含める (reset_demo_data.pyで再作成可能)
